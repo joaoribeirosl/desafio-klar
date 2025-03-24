@@ -114,7 +114,7 @@ Este projeto demonstrou duas abordagens para remoção de ruído em imagens de t
    ```bash
    git clone https://github.com/joaoribeirosl/desafio-klar.git
 
-2. instale as dependências 
+2. Instale as dependências 
     ```py
     pip install numpy tensorflow pydicom opencv-python matplotlib scikit-image
 
