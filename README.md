@@ -5,6 +5,9 @@ O desafio consiste em utilizar algoritmos de inteligência artificial para execu
 ## Link para a base de dados  
 [CT Low Dose Reconstruction - Kaggle](https://www.kaggle.com/datasets/andrewmvd/ct-low-dose-reconstruction)
 
+## Link para o código no Google Colab
+[Clique aqui para acessar o código realizado no colab](https://colab.research.google.com/drive/1w_o2zqHAJHhUCUJpJdHwHR2HETECRi35?usp=sharing)
+
 ## Atividades
 - Remoção do ruído utilizando rede não generativa;
 - Remoção do ruído utilizando rede generativa;
@@ -12,8 +15,8 @@ O desafio consiste em utilizar algoritmos de inteligência artificial para execu
 - Utilização preferencial de arquivos no formato DICOM (.dcm, .IMA).
 
 Se possível, todo o processo de codificação deve ser realizado em um único notebook.
-<br><br>
-# Remoção de Ruído em Imagens de Tomografia Computadorizada de Baixa Dosagem
+
+## Remoção de Ruído em Imagens de Tomografia Computadorizada de Baixa Dosagem
 
 Este projeto tem como objetivo aplicar técnicas de inteligência artificial para remover o ruído presente em imagens de tomografia computadorizada obtidas com baixa dosagem de radiação. Foram implementadas duas abordagens principais:
 
@@ -44,6 +47,7 @@ As imagens no formato DICOM (.dcm, .IMA) foram carregadas e redimensionadas para
 - Leitura dos arquivos DICOM.
 - Redimensionamento das imagens.
 - Normalização dos valores de pixel para o intervalo [0, 1].
+- Conversão dos valores do intervalo [0, 1] para o intervalo [-1, 1]
 - Expansão das dimensões para adequação aos modelos de rede neural.
 
 ## Remoção de Ruído com Rede Neural Não Generativa
@@ -79,7 +83,7 @@ Foi implementada uma Rede Adversária Generativa (GAN) composta por:
   - Camadas de BatchNormalization.
   - Camada Dense final com ativação sigmoid para classificação de validade.
 
-O discriminador foi compilado com função de perda binária cruzada e otimizador Adam. O GAN foi treinado por 10 épocas com batch size de 32.
+O discriminador foi compilado com função de perda binária cruzada e otimizador Adam. O GAN foi treinado por 100 épocas com batch size de 32.
 
 
 ## Avaliação dos Resultados
