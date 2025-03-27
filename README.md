@@ -14,7 +14,6 @@ O desafio consiste em utilizar algoritmos de inteligência artificial para execu
 - Apresentação dos resultados e do processo de treinamento;
 - Utilização preferencial de arquivos no formato DICOM (.dcm, .IMA).
 
-Se possível, todo o processo de codificação deve ser realizado em um único notebook.
 
 ## Remoção de Ruído em Imagens de Tomografia Computadorizada de Baixa Dosagem
 
